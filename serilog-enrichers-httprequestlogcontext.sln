@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B6C4F197-F87A-4587-B708-56D7B1223905}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serilog.Enrichers.HttpRequestLogContext", "src\Serilog.Enrichers.HttpRequestLogContext\Serilog.Enrichers.HttpRequestLogContext.csproj", "{588ED561-09EA-431B-B689-4838E2A43A79}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sample", "sample", "{70A82C85-4398-4B3A-8594-463E23026D2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP.NETCore", "sample\ASP.NETCore\ASP.NETCore.csproj", "{B1F8AE02-F739-4B4E-839B-AEF7E2876347}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{F98A2791-178B-43CA-BAA4-F5586DEF3F6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serilog.Enrichers.HttpRequestLogContext.Test", "test\Serilog.Enrichers.HttpRequestLogContext.Test\Serilog.Enrichers.HttpRequestLogContext.Test.csproj", "{878F10A4-72D5-41EF-A706-BF31E785E4C5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{588ED561-09EA-431B-B689-4838E2A43A79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{588ED561-09EA-431B-B689-4838E2A43A79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{588ED561-09EA-431B-B689-4838E2A43A79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{588ED561-09EA-431B-B689-4838E2A43A79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1F8AE02-F739-4B4E-839B-AEF7E2876347}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1F8AE02-F739-4B4E-839B-AEF7E2876347}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1F8AE02-F739-4B4E-839B-AEF7E2876347}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1F8AE02-F739-4B4E-839B-AEF7E2876347}.Release|Any CPU.Build.0 = Release|Any CPU
+		{878F10A4-72D5-41EF-A706-BF31E785E4C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{878F10A4-72D5-41EF-A706-BF31E785E4C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{878F10A4-72D5-41EF-A706-BF31E785E4C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{878F10A4-72D5-41EF-A706-BF31E785E4C5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{588ED561-09EA-431B-B689-4838E2A43A79} = {B6C4F197-F87A-4587-B708-56D7B1223905}
+		{B1F8AE02-F739-4B4E-839B-AEF7E2876347} = {70A82C85-4398-4B3A-8594-463E23026D2E}
+		{878F10A4-72D5-41EF-A706-BF31E785E4C5} = {F98A2791-178B-43CA-BAA4-F5586DEF3F6F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {14DD75B6-16C7-4DFD-9C51-5D3498122970}
+	EndGlobalSection
+EndGlobal
