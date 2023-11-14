@@ -1,0 +1,15 @@
+﻿################################################################################
+# Este archivo .gitignore ha sido creado automáticamente por Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/sample/ASP.NETCore/bin/Debug/net6.0
+/sample/ASP.NETCore/obj
+/sample/ASP.NETCore/ASP.NETCore.csproj.user
+/src/Serilog.Enrichers.HttpRequestLogContext/bin/Debug/net6.0
+/src/Serilog.Enrichers.HttpRequestLogContext/obj
+/src/Serilog.Enrichers.ScopedLogContext/bin/Debug
+/src/Serilog.Enrichers.ScopedLogContext/obj
+/test/Serilog.Enrichers.HttpRequestLogContext.Test/bin/Debug/net6.0
+/test/Serilog.Enrichers.HttpRequestLogContext.Test/obj/Debug/net6.0
+/test/Serilog.Enrichers.HttpRequestLogContext.Test/obj
