@@ -1,0 +1,57 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net6.0;netstandard2.0</TargetFrameworks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Serilog</RootNamespace>
+
+    <AssemblyName>Serilog.Enrichers.ScopedLogContext</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <GenerateAssemblyVersionAttribute>true</GenerateAssemblyVersionAttribute>
+    <GenerateAssemblyFileVersionAttribute>true</GenerateAssemblyFileVersionAttribute>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <DebugType>portable</DebugType>
+    <IncludeSymbols>true</IncludeSymbols>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+
+
+    <NoWarn>$(NoWarn);NU5048</NoWarn>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <TreatSpecificWarningsAsErrors />
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <MinClientVersion>3.3</MinClientVersion>
+    <PackageId>Serilog.Enrichers.ScopedLogContext</PackageId>
+    <Version>0.0.1-local</Version>
+    <Authors>Manuel Javier Fernandez &amp; Contributors</Authors>
+    <Description>A Serilog Enricher for adding properties to all log events in an async flow.</Description>
+    <Copyright>Copyright 2021-2023 Manuel Javier Fernandez &amp; Contributors - Provided under the Apache License, Version 2.0</Copyright>
+    <PackageTags>serilog;enricher;enrichers;scopedlogcontext;scoped-log-context;scopedcontext;scoped-context;logcontext;log-context;serilog-enricher;serilog-contrib</PackageTags>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageIcon>images\icon.png</PackageIcon>
+    <PackageIconUrl>https://raw.githubusercontent.com/serilog-contrib/serilog-enrichers-globallogcontext/master/assets/serilog-enrichers-globallogcontext-nuget.png</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/MonticolaExplorator/serilog-scopedlogcontext</PackageProjectUrl>
+    <PackageReleaseNotes>https://github.com/MonticolaExplorator/serilog-scopedlogcontext/releases</PackageReleaseNotes>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/MonticolaExplorator/serilog-scopedlogcontext.git</RepositoryUrl>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <DisableImplicitFrameworkReferences Condition=" '$(TargetFramework)' == 'net45' ">true</DisableImplicitFrameworkReferences>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Serilog" Version="3.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\asset\serilog-enrichers-scopedlogcontext-nuget.png" Pack="true" Visible="false" PackagePath="images\icon.png" />
+  </ItemGroup>
+  
+</Project>
