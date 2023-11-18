@@ -20,7 +20,7 @@ namespace ASP.NETCore.Controllers
         }
 
         [HttpGet]
-        public WeatherForecast Get()
+        public WeatherForecast Get(string location)
         {
             var forecast = new WeatherForecast
             {
@@ -28,7 +28,11 @@ namespace ASP.NETCore.Controllers
                 TemperatureC = Random.Shared.Next(-20, 55),
                 Summary = Summaries[Random.Shared.Next(Summaries.Length)]
             };
-            HttpRequestLogContext.PushProperty("TomorrowForecast", forecast, destructureObjects: true);
+            HttpRequestLogContext.PushProperty("Location", location);
+            HttpRequestLogContext.PushProperty("PredictedTemp", forecast.TemperatureC);
+
+            _logger.LogInformation("Returning weather forecast");
+
             if (forecast.TemperatureC < -10)
                 throw new Exception("It's going to be freezing cold!");
 

@@ -5,7 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Host.UseSerilog((ctx, cfg) =>
     cfg.Enrich.FromHttpRequestLogContext()
-    .WriteTo.Console(outputTemplate: "[{Timestamp:HH:mm:ss} {Level:u3}] {Message:lj} {Properties}{NewLine}{Exception}"));
+    .WriteTo.Console(outputTemplate: "[{Timestamp:HH:mm:ss} {Level:u3}] [{$Location}] [{$PredictedTemp}] {Message:lj} {NewLine}{Exception}"));
 
 builder.Services.AddControllers();
 builder.Services.AddHttpContextAccessor();
