@@ -1,15 +1,53 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFrameworks>net6.0;netstandard2.0</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <RootNamespace>Serilog</RootNamespace>
+    
+    <NoWarn>$(NoWarn);NU5048</NoWarn>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <TreatSpecificWarningsAsErrors />
   </PropertyGroup>
 
+  <AssemblyName>Serilog.Enrichers.HttpRequestLogContext</AssemblyName>
+  <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  <GenerateAssemblyVersionAttribute>true</GenerateAssemblyVersionAttribute>
+  <GenerateAssemblyFileVersionAttribute>true</GenerateAssemblyFileVersionAttribute>
+  <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+  <PublishRepositoryUrl>true</PublishRepositoryUrl>
+  <DebugType>portable</DebugType>
+  <IncludeSymbols>true</IncludeSymbols>
+  <EmbedUntrackedSources>true</EmbedUntrackedSources>
+  <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+  
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
     <PackageReference Include="Serilog" Version="3.1.0" />
   </ItemGroup>
 
+  <PropertyGroup>
+    <MinClientVersion>3.3</MinClientVersion>
+    <PackageId>Serilog.Enrichers.HttpRequestLogContext</PackageId>
+    <Version>0.0.1-local</Version>
+    <Authors>Manuel Javier Fernandez &amp; Contributors</Authors>
+    <Description>A Serilog Enricher for adding properties to all log events in an http request context.</Description>
+    <Copyright>Copyright 2021-2023 Manuel Javier Fernandez &amp; Contributors - Provided under the Apache License, Version 2.0</Copyright>
+    <PackageTags>serilog;enricher;enrichers;httprequestlogcontext;http-request-log-context;httprequest;httprequest-context;logcontext;log-context;serilog-enricher;serilog-contrib</PackageTags>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageIcon>images\icon.png</PackageIcon>
+    <PackageIconUrl>https://raw.githubusercontent.com/MonticolaExplorator/serilog-httprequestlogcontext/main/asset/serilog-enrichers-httprequestlogcontext-nuget.png</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/MonticolaExplorator/serilog-httprequestlogcontext</PackageProjectUrl>
+    <PackageReleaseNotes>https://github.com/MonticolaExplorator/serilog-httprequestlogcontext/releases</PackageReleaseNotes>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/MonticolaExplorator/serilog-httprequestlogcontext.git</RepositoryUrl>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <None Include="..\..\asset\serilog-enrichers-httprequestlogcontext-nuget.png" Pack="true" Visible="false" PackagePath="images\icon.png" />
+  </ItemGroup>
 </Project>
+
