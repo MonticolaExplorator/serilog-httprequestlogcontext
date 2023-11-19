@@ -9,7 +9,7 @@ namespace Serilog;
 public static class LoggerEnrichmentConfigurationExtensions
 {
     /// <summary>
-    /// Enrich log events with properties from <see cref="Context.ScopedLogContext"/>.
+    /// Enrich log events with properties from <see cref="Context.HttpRequestLogContext"/>.
     /// </summary>
     /// <returns>Configuration object allowing method chaining.</returns>
     /// <exception cref="ArgumentNullException"></exception>

@@ -13,3 +13,4 @@
 /test/Serilog.Enrichers.HttpRequestLogContext.Test/bin/Debug/net6.0
 /test/Serilog.Enrichers.HttpRequestLogContext.Test/obj/Debug/net6.0
 /test/Serilog.Enrichers.HttpRequestLogContext.Test/obj
+/src/Serilog.Enrichers.HttpRequestLogContext/bin/Debug/netstandard2.0

@@ -20,6 +20,18 @@ using Microsoft.AspNetCore.Http;
 
 namespace Serilog.Context;
 
+/// <summary>
+/// Log context with the same lifecycle as the current Http request. Holds ambient properties that can be attached to log events. To
+/// configure, use the <see cref="Serilog.LoggerEnrichmentConfigurationExtensions.FromHttpRequestLogContext"/> method.
+/// </summary>
+/// <example>
+/// Configuration:
+/// <code lang="C#">
+/// var log = new LoggerConfiguration()
+///     .Enrich.FromHttpRequestLogContext()
+///     ...
+/// </code>
+/// </example>
 public static class HttpRequestLogContext
 {
     internal static IHttpContextAccessor _contextAccessor = new HttpContextAccessor();
