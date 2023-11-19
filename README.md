@@ -20,7 +20,7 @@ builder.Host.UseSerilog((ctx, cfg) =>
     //rest of the configuration...
 ```
 
-The `FromHttpRequestLogContext()` enricher adds the properties present on the `Serilog.Context.HttpRequestLogContext`, to all log events produced on the scope of an Http request.
+The `FromHttpRequestLogContext()` enricher adds the properties present on the `Serilog.Context.HttpRequestLogContext`, to all log events produced in the scope of an Http request.
 
 The properties can be added and removed from the Http request log context using `HttpRequestLogContext.PushProperty`:
 
