@@ -33,9 +33,9 @@
     <MinClientVersion>3.3</MinClientVersion>
     <PackageId>Serilog.Enrichers.HttpRequestLogContext</PackageId>
     <Version>0.0.1-local</Version>
-    <Authors>Manuel Javier Fernandez &amp; Contributors</Authors>
-    <Description>A Serilog Enricher for adding properties to all log events in an http request context.</Description>
-    <Copyright>Copyright 2021-2023 Manuel Javier Fernandez &amp; Contributors - Provided under the Apache License, Version 2.0</Copyright>
+    <Authors>Manuel Javier Fernandez</Authors>
+    <Description>A Serilog Enricher for adding properties scoped to the current http request.</Description>
+    <Copyright>Copyright 2021-2023 Manuel Javier Fernandez - Provided under the Apache License, Version 2.0</Copyright>
     <PackageTags>serilog;enricher;enrichers;httprequestlogcontext;http-request-log-context;httprequest;httprequest-context;logcontext;log-context;serilog-enricher;serilog-contrib</PackageTags>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <PackageIcon>images\icon.png</PackageIcon>
@@ -44,10 +44,16 @@
     <PackageReleaseNotes>https://github.com/MonticolaExplorator/serilog-httprequestlogcontext/releases</PackageReleaseNotes>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/MonticolaExplorator/serilog-httprequestlogcontext.git</RepositoryUrl>
+    <Title>Serilog.Enrichers.HttpRequestLogContext</Title>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
   
   <ItemGroup>
     <None Include="..\..\asset\serilog-enrichers-httprequestlogcontext-nuget.png" Pack="true" Visible="false" PackagePath="images\icon.png" />
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 </Project>
 
