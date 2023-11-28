@@ -57,4 +57,4 @@ jobs:
             files: artifact/nuget/**/*
       - name: Push generated package to nuget registry
         if: matrix.job.push && (github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/tags/'))
-        run: dotnet nuget push "./artifact/nuget/**/*.nupkg" --skip-duplicate true --api-key ${{ secrets.NUGET_PUSH_API_KEY }} --source ${{ secrets.NUGET_PUSH_SOURCE }}
+        run: dotnet nuget push "./artifact/nuget/**/*.nupkg" --api-key ${{ secrets.NUGET_PUSH_API_KEY }} --source ${{ secrets.NUGET_PUSH_SOURCE }}
